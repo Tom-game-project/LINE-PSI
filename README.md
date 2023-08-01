@@ -49,6 +49,9 @@ LINEbotの友達追加は下のurlから👇👇👇
 
 calc_parser.jsはボットのコードそのものではなく計算を評価する部分の抜粋です。
 calc_parser.pyはjavascriptとほとんど同じものなので、js版で何言ってんだこいつと思った人はpy版も参考にしてみてください
+## ライセンス
+
+[MIT](LICENSE.MIT)
 
 [^1]:javascriptの`Math`の関数を使っています。実際の計算結果と多少の誤差がある場合があります。
 
