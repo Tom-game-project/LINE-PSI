@@ -1,5 +1,12 @@
 /*
-for google app script
+#calc_parser.js
+## written by Tom0427
+## for Google App Script
+
+
+
+
+
 */
 
 const Elem_type = {

@@ -1,11 +1,13 @@
 """
 # calc_parser.py
+## written by Tom0427 
+
 
 javascript editionではcalcVMが実装されていますが
 python editionには実装してありません。
 
 ```python
-from calc_parser import *
+from calc_parser import parser
 
 text = "sin(pi)"
 par=parser(text)
@@ -15,6 +17,8 @@ print(
 )
 ```
 
+python editionでは`__repr__`を使用しているため
+`.resolve()`の戻り値の表示の仕方には微妙な差があります
 """
 
 from enum import Enum,auto
@@ -428,7 +432,8 @@ class formula_tree:
 
 
 if __name__=="__main__":
-    """texts=[
+    # 文法解釈可能な式の例
+    texts=[
     " 10 + ( x + log10(2) * sin(x) ) * log10(x)",
     "(-sin(x)*3)+(-2*cos(x))",
     "pi",
@@ -437,14 +442,7 @@ if __name__=="__main__":
     "3.14",
     "-8+6"
     ]
-    """
-    texts = [
-        "main(a,b,c)"
-    ]
+
     for i in texts:
         par=parser(i)
         print(par.resolve())
-    #print(
-    #    elem.new(" sin(x) ").elemtype
-    #)
-
