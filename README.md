@@ -4,8 +4,9 @@
 ## 関数計算のためのラインボット
 
 ![icon](images/icon(60x60).png)
+<img src="images/LINE_Brand_icon.png" width="60px" height="60px">
 
-友達追加は下のurlから
+LINEbotの友達追加は下のurlから
 
 ![qrcode](images/767sfzgv.png)
 
