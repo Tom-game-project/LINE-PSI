@@ -1,8 +1,21 @@
 """
+# calc_parser.py
+
+javascript editionではcalcVMが実装されていますが
+python editionには実装してありません。
+
+```python
+from calc_parser import *
+
+text = "sin(pi)"
+par=parser(text)
+print()
+print(
+    par.resolve()
+)
+```
 
 """
-
-
 
 from enum import Enum,auto
 
@@ -350,7 +363,7 @@ class parser:
         )
 
     def resolve(self):
-        return self.resolve_util(self.code)
+        return self.resolve_util(self.code)[0]
     def priority(self,vec:list[str])->int|None:
         #配列内にある最も優先順位が低い演算子を探します
         #返り値はindexです
@@ -430,18 +443,8 @@ if __name__=="__main__":
     ]
     for i in texts:
         par=parser(i)
-        print(par.resolve()[0])
-    el = elem("-sin(x)")
-    print(el.elemtype)
+        print(par.resolve())
     #print(
     #    elem.new(" sin(x) ").elemtype
     #)
 
-
-"""
-fn f(){
-    return g()
-}
-fn g():
-    return f()
-"""
