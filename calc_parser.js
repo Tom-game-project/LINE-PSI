@@ -1,6 +1,7 @@
 /*
-#calc_parser.js
-## written by Tom0427
+filename : calc_parser.js
+author : Tom0427
+
 ## for Google App Script
 
 

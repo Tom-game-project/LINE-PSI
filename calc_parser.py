@@ -1,8 +1,8 @@
 """
-# calc_parser.py
-## written by Tom0427 
+filename : calc_parser.py
+author : Tom0427 
 
-
+(注釈)
 javascript editionではcalcVMが実装されていますが
 python editionには実装してありません。
 
