@@ -48,7 +48,8 @@ LINEbotの友達追加は下のurlから👇👇👇
 ## リポジトリについて
 
 calc_parser.jsはボットのコードそのものではなく計算を評価する部分の抜粋です。
-calc_parser.pyはjavascriptとほとんど同じものなので、js版で何言ってんだこいつと思った人はpy版も参考にしてみてください
+js版で何言ってんだこいつと思った人は[formuliteレポジトリ](https://github.com/Tom-game-project/formulite)も参考にしてみてください[PyPi](https://pypi.org/project/formulite/)に公開しているpython用のモジュールで、大体の挙動は同じです。
+
 ## ライセンス
 
 [MIT](LICENSE.MIT)
