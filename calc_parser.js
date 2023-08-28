@@ -489,6 +489,22 @@ class parser{
     }
 }
 
+/**
+ * # s_formula_format
+ * # 式を解釈の済んだリストを引数に渡すとs式となったstringのデータを返却します。
+ * @param {Array} elem 
+ * @returns {string}
+ */
+function s_formula_format(elem) {
+    if (Array.isArray(elem)) {
+        return "(" + elem.map(s_formula_format).join(" ") + ")"
+    } else if (elem === "") {
+        return "0"
+    }
+    else {
+        return elem
+    }
+}
 
 class calcVM{
     constructor(resolved_data){
